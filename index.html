@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon site </title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        #menu {
+            width: 200px;
+            background-color: #f4f4f4;
+            float: left;
+            padding: 10px;
+        }
+        #content {
+            margin-left: 210px; /* Laisse de la place pour le menu */
+            padding: 10px;
+        }
+        a {
+            display: block;
+            padding: 10px;
+            margin: 5px 0;
+            text-decoration: none;
+            color: #333;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Zone d'entête -->
+    <header>
+        <h1>Bienvenue sur mon site</h1>
+    </header>
+
+    <!-- Zone de menu -->
+    <div id="menu">
+        <a href="acceuil.html" target="contentFrame">Accueil</a>
+        <a href="page1.html" target="contentFrame">Page 1</a>
+        <a href="page2.html" target="contentFrame">Page 2</a>
+        <a href="page3.html" target="contentFrame">Page 3</a>
+        <a href="page4.html" target="contentFrame">Page 4</a>
+        <a href="page5.html" target="contentFrame">Page 5</a>
+        <a href="page6.html" target="contentFrame">Page 6</a>
+    </div>
+
+    <!-- Zone de contenu principal -->
+    <div id="content">
+        <iframe name="contentFrame" src="acceuil.html" width="100%" height="600px" style="border:none;"></iframe>
+    </div>
+
+</body>
+</html>
